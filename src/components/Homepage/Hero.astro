@@ -1,15 +1,18 @@
 ---
 import Logo from "@/assets/homepage/logo.png";
-import Hero from "@/assets/homepage/Img-Content.png"
-import Status from "@/assets/homepage/Bullet.svg"
-import Illlustration from "@/assets/homepage/card-illustration.png"
-import Calendar from "@/assets/homepage/calendar-2.svg"
+import Hero from "@/assets/homepage/Img-Content.png";
+import Status from "@/assets/homepage/Bullet.svg";
+import Illlustration from "@/assets/homepage/card-illustration.png";
+import Calendar from "@/assets/homepage/calendar-2.svg";
+import User from "@/assets/homepage/user-circle-alt.svg";
+import Clock from "@/assets/homepage/clock-outline.svg";
+import Ticket from "@/assets/homepage/ticket.svg";
 import Image from "astro/components/Image.astro";
 ---
 
 <header>
-  <nav class="max-w-300 flex mx-auto gap-12 py-5">
-    <img src={Logo.src} alt="logo">
+  <nav class="max-w-300 mx-auto flex gap-12 py-5">
+    <img src={Logo.src} alt="logo" />
     <div class="flex justify-between items-center w-full">
       <ul class="flex gap-8 text-secondary-500">
         <li>About us</li>
@@ -17,35 +20,40 @@ import Image from "astro/components/Image.astro";
         <li>Pricing</li>
         <li>Instructors</li>
       </ul>
-      <button class="px-6.5 py-2.5 border border-primary-500 text-primary-500 rounded-lg">Contact us</button>
+      <button class="px-6.5 py-2.5 border border-primary-500 text-primary-500 rounded-lg">
+        Contact us
+      </button>
     </div>
   </nav>
-  <div class="h-px w-full bg-primary-500 mb-15"/>
-  <div class="grid grid-cols-[minmax(0,583px)_minmax(0,516px)] justify-between max-w-300 mx-auto">
-    <div class="flex flex-col gap-16.5" >
-      <h1 class="text-[56px] text-secondary-500 tracking-[-0.04em] font-bold leading-tight">Find Your Flow, Connect Your Soul. or Yoga for <span class="text-primary-500 font-serif font-normal">Real Life.</span></h1>
+  <div class="h-px w-full bg-primary-500 mb-15" />
+  <div class="grid grid-cols-[minmax(0,583px)_minmax(0,516px)] justify-between max-w-300 mx-auto mb-24">
+    <div class="flex flex-col gap-16.5">
+      <h1 class="text-[56px] text-secondary-500 tracking-[-0.04em] font-bold leading-tight">
+        Find Your Flow, Connect Your Soul. or Yoga for{" "}
+        <span class="text-primary-500 font-serif font-normal">Real Life.</span>
+      </h1>
       <div class="flex flex-col gap-4 border border-primary-500 p-4 rounded-2xl">
         <div class="flex gap-2 items-center">
-          <Status/>
+          <Status />
           <p class="text-white/80">Upcoming Event</p>
         </div>
         <div class="flex gap-6 items-center">
-          <img src={Illlustration.src} alt="illustration">
+          <img src={Illlustration.src} alt="illustration" />
           <div class="grid grid-cols-[max-content_max-content] grid-rows-2 gap-x-6 gap-y-2.5 text-white">
-            <div class="flex gap-2">
-              <Calendar/>
+            <div class="flex gap-2 items-center">
+              <Calendar />
               <p>Wednesday, May 28, 2025</p>
             </div>
-            <div class="flex gap-2">
-              <Calendar/>
+            <div class="flex gap-2 items-center">
+              <User />
               <p>Sarah M.</p>
             </div>
-            <div class="flex gap-2">
-              <Calendar/>
+            <div class="flex gap-2 items-center">
+              <Clock />
               <p>8:00 - 09:00 AM WIB</p>
             </div>
-            <div class="flex gap-2">
-              <Calendar/>
+            <div class="flex gap-2 items-center">
+              <Ticket />
               <p>9 ticket left</p>
             </div>
           </div>
@@ -54,10 +62,13 @@ import Image from "astro/components/Image.astro";
           Yoga Flow Kemang Studio, South Jakarta
         </button>
       </div>
-      <p class="text-white text-[20px] ">At Kindred Flow Yoga, we believe yoga is for every body and every mind. Join our supportive community to discover a stronger, more peaceful you.</p>
+      <p class="text-white text-[20px]">
+        At Kindred Flow Yoga, we believe yoga is for every body and every mind.
+        Join our supportive community to discover a stronger, more peaceful you.
+      </p>
     </div>
     <div>
-      <Image src={Hero} alt="Hero image"/>
+      <Image src={Hero} alt="Hero image" />
     </div>
   </div>
 </header>
